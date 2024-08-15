@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Música - Site de Downloads</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1c1c; /* Fundo escuro para um estilo mais urbano */
+            color: #fff;
+        }
+
+        header {
+            background: linear-gradient(135deg, #c8102e, #ff6f61); /* Gradiente vermelho para laranja */
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #ff6f61; /* Laranja */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+            font-style: italic;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .music-list {
+            background-color: #2c2c2c; /* Cinza escuro */
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            max-width: 500px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .music-list h2 {
+            margin-top: 0;
+            font-size: 2em;
+            color: #ff6f61; /* Laranja */
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .music-list img {
+            max-width: 70%; /* Imagem maior para destaque */
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #ff6f61; /* Borda laranja */
+        }
+
+        .music-list ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .music-list li {
+            border-bottom: 1px solid #444; /* Borda cinza escuro */
+            padding: 15px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .music-list li:last-child {
+            border-bottom: none;
+        }
+
+        .music-list span {
+            font-size: 1.2em;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .music-info {
+            margin-bottom: 15px;
+            color: #ccc;
+            font-size: 0.9em;
+        }
+
+        .music-info p {
+            margin: 5px 0;
+        }
+
+        .music-list a {
+            background-color: #ff6f61; /* Laranja */
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+            display: inline-block;
+            margin-top: 15px; /* Distância do botão em relação ao texto */
+        }
+
+        .music-list a:hover {
+            background-color: #c8102e; /* Vermelho escuro */
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #2c2c2c; /* Cinza escuro */
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minha Música</h1>
+        <p>Ouça e baixe suas músicas favoritas!</p>
+    </header>
+
+    <main>
+        <section class="music-list">
+            <h2>Lista de Músicas</h2>
+
+            <!-- Música 1 -->
+            <img src="https://1.bp.blogspot.com/-v2R7Veqn3Ds/YU76obOHHsI/AAAAAAAAEGk/9Gs2Afli5g00CM-dMEXIIMjGO49bME2HQCNcBGAsYHQ/s320/IMG_20210922_071237.jpg" alt="Wilson Johns - Esforço">
+            <ul>
+                <li>
+                    <span>Wilson Johns - Esforço</span>
+                    <div class="music-info">
+                        <p><strong>Artista:</strong> Wilson Johns</p>
+                        <p><strong>Título:</strong> Esforço</p>
+                        <p><strong>Gênero:</strong> Hip Hop & Rap</p>
+                        <p><strong>Ano:</strong> 2021</p>
+                    </div>
+                    <a href="https://www.mediafire.com/file/ni5xpuyxr7kjwvj/Wilson_Johns_-_Esfor%25C3%25A7o.mp3/file" target="_blank" rel="noopener noreferrer">Baixar</a>
+                </li>
+            </ul>
+
+            <!-- Música 2 -->
+            <img src="/home/hermes/Pictures/Capa1.jpg" alt="Buneckito - Gang feat. Wilson Johns">
+            <ul>
+                <li>
+                    <span>Buneckito - Gang feat. Wilson Johns</span>
+                    <div class="music-info">
+                        <p><strong>Artista:</strong> Buneckito</p>
+                        <p><strong>Título:</strong> Gang feat. Wilson Johns</p>
+                        <p><strong>Gênero:</strong> Hip Hop & Rap</p>
+                        <p><strong>Ano:</strong> 2021</p>
+                    </div>
+                    <a href="https://www.mediafire.com/file/pitse6gsyrck3zr/Buneckito__Gang_feat_Wilson_Johns.m4a/file" target="_blank" rel="noopener noreferrer">Baixar</a>
+                </li>
+            </ul>
+
+            <!-- Música 3 -->
+            <img src="/home/hermes/Pictures/Capa4.jpg" alt="Jolass - Passo a Passo feat. Wilson Johns & Young Spygo">
+            <ul>
+                <li>
+                    <span>Jolass - Passo a Passo feat. Wilson Johns & Young Spygo</span>
+                    <div class="music-info">
+                        <p><strong>Artista:</strong> Jolass</p>
+                        <p><strong>Título:</strong> Passo a Passo feat. Wilson Johns & Young Spygo</p>
+                        <p><strong>Gênero:</strong> Hip Hop & Rap</p>
+                        <p><strong>Ano:</strong> 2021</p>
+                    </div>
+                    <a href="https://www.mediafire.com/file/ht2kdxffmlzwe2i/Jolass__Passo_a_passo_feat_Wilson_Johns__Young_Spygo_%2528%25C3%2581udio_Oficial%2529.m4a/file" target="_blank" rel="noopener noreferrer">Baixar</a>
+                </li>
+            </ul>
+
+            <!-- Música 4 -->
+            <img src="/home/hermes/Pictures/Capa2.jpg" alt="Wilson Johns - Não Ligo feat. Geyliz">
+            <ul>
+                <li>
+                    <span>Wilson Johns - Não Ligo feat. Geyliz</span>
+                    <div class="music-info">
+                        <p><strong>Artista:</strong> Wilson Johns</p>
+                        <p><strong>Título:</strong> Não Ligo feat. Geyliz</p>
+                        <p><strong>Gênero:</strong> Hip Hop & Rap</p>
+                        <p><strong>Ano:</strong> 2021</p>
+                    </div>
+                    <a href="https://www.mediafire.com/file/h3gmn3wdt0c04c8/Wilson_Johns__N%25C3%25A3o_Ligo_%2528Ft._Geyliz%2529__%25C3%2581udio_Oficial_.m4a/file" target="_blank" rel="noopener noreferrer">Baixar</a>
+                </li>
+            </ul>
+
+            <!-- Música 5 -->
+            <img src="/home/hermes/Pictures/Capa3.jpg" alt="Wilson Johns x Principh x Luter Stuner - Quem Sou Eu">
+            <ul>
+                <li>
+                    <span>Wilson Johns x Principh x Luter Stuner - Quem Sou Eu</span>
+                    <div class="music-info">
+                        <p><strong>Artista:</strong> Wilson Johns, Principh, Luter Stuner</p>
+                        <p><strong>Título:</strong> Quem Sou Eu</p>
+                        <p><strong>Gênero:</strong> Hip Hop & Rap</p>
+                        <p><strong>Ano:</strong> 2021</p>
+                    </div>
+                    <a href="https://www.mediafire.com/file/ecyxvctu8hha9kf/Wilson_Johns_x_Principh_x_Luter_Stuner__Quem_Sou_Eu_%2528Audio_Oficial%2529.m4a/file" target="_blank" rel="noopener noreferrer">Baixar</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Minha Música - Criado por Milato</p>
+    </footer>
+</body>
+</html>
+
